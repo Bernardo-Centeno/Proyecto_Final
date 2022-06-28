@@ -1,19 +1,19 @@
-## Table of Contents
+## Tabla de contenido
 1. [Informacion general](#general-info)
 2. [Tecnologia](#technologies)
 3. [Instalacion](#installation)
 4. [Guia De Uso](#GuiaDeUso)
 5. [Colaboracion](#collaboration)
 
-### General Info
+### Informacion General
 
 Tienda de venta de articulos de pets-shop con envios a domicilios. 
-## Technologies
+## Tecnologias
 
 Tecnologias usadas en el proyecto.
 * [python](https://www.python.org/downloads/): Version 3.10
 * Django: Version 4.0.5
-## Installation
+## Instalacion
 
 instalacion de python.
 abrir cmd y escrivir en la consola los siguientes comandos.
@@ -41,7 +41,7 @@ eso nos dirige a la url local del repo, abrimos un navegador y copiamos el link 
 * En la derecha podemos ver una seccion llamada "Agregar Productos" donde se pueden introducir nueva mercaderia a la bace de datos que postirior mente puede ser visualizada por la barra de busqueda.
 
 
-## Collaboration
+## Creadores
 
 Este proyecto fue creado por:
 * https://github.com/Atchiam
