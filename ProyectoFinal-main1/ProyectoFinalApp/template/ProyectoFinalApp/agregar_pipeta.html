@@ -1,0 +1,25 @@
+{% extends 'ProyectoFinalApp/nav-aside.html' %}
+
+{% load static %}
+
+{% block contenidoPagina %}
+<h1>Agregar Pipetas</h1>
+
+    <form class="cuestionario m-0 conteiner row col-10" action="" method="post">
+        {%csrf_token%}
+        <fieldset class="m-4 mt-1 bg-primary ">
+            <legend class="fs-6 m-2 text-decoration-none btn btn-success">Pipetas</legend>
+            <div class="d-flex justify-content-between align-items-center">
+                <label class="fs-6 m-2 text-decoration-none btn btn-success">tipo: <input class="d-flex " type="text" name="tipo" placeholder="Gato o Perro " maxlength="30"></label>
+                <label class="fs-6 m-2 text-decoration-none btn btn-success">nombre: <input class="d-flex " type="text" name="nombre" placeholder="Marca" maxlength="30"> </label>
+                <label class="fs-6 m-2 text-decoration-none btn btn-success">peso: <input class="d-flex " type="number" name="peso"  placeholder="Kg" min="0"> </label>
+                <label class="fs-6 m-2 text-decoration-none btn btn-success">precio: <input class="d-flex " type="number" name="precio" placeholder="Precio" min="0"> </label>      
+            </div>
+            <div class="d-flex justify-content-evenly">
+                <input class="fs-6 m-2 text-decoration-none btn btn-success" type="reset">
+                <input class="fs-6 m-2 text-decoration-none btn btn-success" type="submit">
+            </div>
+        </fieldset>
+    </form>
+
+{% endblock %}

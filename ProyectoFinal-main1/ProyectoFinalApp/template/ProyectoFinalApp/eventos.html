@@ -1,0 +1,24 @@
+{% extends 'ProyectoFinalApp/nav-aside.html' %}
+
+{% load static %}
+
+{% block contenidoPagina %}
+    <h1>Eventos</h1>
+    <table style="border: 0.5rem solid #603601; margin: 1rem;">
+        <thead>
+            <td >nombre</td> <!-- table data -->
+            <td>descripcion</td>
+            <td>fecha</td>
+            <td>duracion</td>
+
+        </thead>
+        {% for eventos in eventos %}
+        <tr> <!-- tr = table row -->
+            <td>{{eventos.nombre}}</td>
+            <td>{{eventos.descripcion}}</td>
+            <td>{{eventos.fecha}}</td>
+            <td>{{eventos.duracion}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

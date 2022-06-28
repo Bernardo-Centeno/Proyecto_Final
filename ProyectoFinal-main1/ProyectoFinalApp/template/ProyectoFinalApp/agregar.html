@@ -1,0 +1,64 @@
+{% extends 'ProyectoFinalApp/nav-aside.html' %}
+
+{% load static %}
+
+{% block contenidoPagina %}
+<h1 class="fs-1 ">Agregar Productos</h1>
+<div class="m-4 mt-1 bg-primary d-flex flex-wrap">
+    <a class="fs-4 m-2 text-decoration-none btn btn-info" href="{% url 'agregar_collar' %}">Agregar Collar</a>
+    <a class="fs-4 m-2 text-decoration-none btn btn-warning" href="{% url 'agregar_comida' %}">Agregar Comida</a>
+    <a class="fs-4 m-2 text-decoration-none btn btn-success" href="{% url 'agregar_pipeta' %}">Agregar Pipeta</a>
+</div>
+{% endblock %}
+<!-- <div class="container-fluid row">
+    <form class="cuestionario m-0 row col-4 " action="" method="post">
+        {%csrf_token%}
+        <fieldset class="cuestionario__body mt-0 ">
+            <legend class="">Comida</legend>
+            <div class="">
+                <label>tipo: <input class="d-flex " type="text" name="tipo" placeholder="Gato o Perro " maxlength="30"></label>
+                <label>tamaño: <input class="d-flex " type="text" name="tamaño" placeholder="Grande Mediano Pequeño " maxlength="30" > </label>
+                <label>nombre: <input class="d-flex " type="text" name="nombre" placeholder="Marca" maxlength="30"> </label>
+                <label>peso: <input class="d-flex " type="number" name="peso" placeholder="Kg" min="0"> </label>
+                <label>precio: <input class="d-flex " type="number" name="precio" placeholder="Precio" min="0"> </label>      
+            </div>
+            <div class="">
+                <input class="btn" type="reset">
+                <input class="btn" type="submit">
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="cuestionario m-0 conteiner row col-4" action="" method="post">
+        {%csrf_token%}
+        <fieldset class="cuestionario__body mt-0  ">
+            <legend class="">Pipetas</legend>
+            <div class="">
+                <label>tipo: <input class="d-flex " type="text" name="tipo" placeholder="Gato o Perro " maxlength="30"></label>
+                <label>nombre: <input class="d-flex " type="text" name="nombre" placeholder="Marca" maxlength="30"> </label>
+                <label>peso: <input class="d-flex " type="number" name="peso"  placeholder="Kg" min="0"> </label>
+                <label>precio: <input class="d-flex " type="number" name="precio" placeholder="Precio" min="0"> </label>      
+            </div>
+            <div class="">
+                <input class="btn" type="reset">
+                <input class="btn" type="submit">
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="cuestionario m-0 row col-4" action="" method="post">
+        {%csrf_token%}
+        <fieldset class="cuestionario__body mt-0 ">
+            <legend class="">Collares</legend>
+            <div class="">
+                <label>largo: <input class="d-flex " type="number" name="largo"  placeholder="cm" min="0"> </label>
+                <label>color: <input class="d-flex " type="text" name="color" placeholder="Rojo, Azul, etc" maxlength="30"></label>
+                <label>precio: <input class="d-flex " type="number" name="precio" placeholder="precio" min="0"> </label>      
+            </div>
+            <div class="">
+                <input class="btn" type="reset">
+                <input class="btn" type="submit">
+            </div>
+        </fieldset>
+    </form>
+</div> -->
